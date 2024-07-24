@@ -19,7 +19,7 @@ const Header = () => {
                             <a href="#" className="nav-bar-anchor">Instagram</a>
                         </li>
                         <li className="nav-bar-li">
-                            <a href="/tiktok" className="nav-bar-anchor">Tiktok</a>
+                            <a href="/" className="nav-bar-anchor">Tiktok</a>
                         </li>
                         <li className="nav-bar-li">
                             <a href="/blog" className="nav-bar-anchor">Blog</a>

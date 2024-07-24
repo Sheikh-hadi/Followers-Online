@@ -1,0 +1,50 @@
+.HomeSection_1 {
+    /* height: max-content; */
+    background-color: #FA396012;
+    padding: 10vh 5vw;
+}
+
+
+.HomeSection_1_col_1_h1 {
+    font-family: "Fira Sans", Sans-serif;
+    font-size: 47px;
+    font-weight: 700;
+    color: #0e1a29;
+}
+
+.HomeSection_1_col_1_p {
+    font-family: "DM Sans", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4em;
+    color: #5e6d64;
+}
+
+.btn_home_section_1 {
+    width: 100%;
+    font-family: "DM Sans", Sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    /* fill: #FFFFFF; */
+    color: #FFFFFF;
+    background-color: #f51636;
+    border-style: none;
+    padding: 16px 20px 12px 20px;
+}
+
+
+@media (max-width:767px) {
+
+    .HomeSection_1_col_1_h1 {
+        font-size: 34px;
+        line-height: 1em;
+    }
+
+    .btn_home_section_1 {
+        width: 100%;
+    }
+
+
+}

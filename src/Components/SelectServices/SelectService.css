@@ -1,4 +1,5 @@
 .Select_service {
     padding: 2vh 8vw;
     text-align: center;
+    overflow: hidden;
 }

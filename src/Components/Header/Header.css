@@ -1,0 +1,39 @@
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 5vw;
+}
+
+.nav-bar-ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-bar-li {
+    display: block;
+    margin: 3vh 2vw;
+}
+
+.nav-bar-li a {
+    text-decoration: none;
+    font-family: "DM Sans", Sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.3em;
+    color: #5e6d64;
+}
+
+.nav-bar-li a:hover {
+    color: #f8000c;
+}
+
+@media (max-width:767px) {
+.nav-bar {
+       
+        padding: 1vh 3vw;
+    }
+
+
+}

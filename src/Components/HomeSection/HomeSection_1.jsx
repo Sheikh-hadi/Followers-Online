@@ -1,6 +1,6 @@
 import './HomeSection_1.css';
 import phoneImg from '../../assets/HomeSection_1_img.png'
-import { Col, Row, Button } from "antd"
+import { Col, Row, Button, Image } from "antd"
 function HomeSection_1() {
     return (
 
@@ -29,7 +29,9 @@ function HomeSection_1() {
 
             </Col>
             <Col className="HomeSection_1_col_2" xs={24} sm={12} md={12}>
-                <img src={phoneImg} alt="Phone Image" /></Col>
+                <Image
+                    src={phoneImg}
+                /></Col>
         </Row>
 
     )

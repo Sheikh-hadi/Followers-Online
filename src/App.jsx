@@ -1,12 +1,11 @@
-
 import './App.css'
-import SelectService from './Components/SelectServices/SelectSecvice'
+import Home from './Pages/Home'
 
 function App() {
 
   return (
     <>
-     <SelectService/>
+      <Home />
     </>
   )
 }

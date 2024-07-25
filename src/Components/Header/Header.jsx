@@ -1,9 +1,35 @@
-
-import { Row, Image, Col } from 'antd';
+import { Row, Image, Col, Dropdown } from 'antd';
+import { DownOutlined } from '@ant-design/icons';
 import headerLogo from '../../assets/Logo.png';
 import './Header.css';
 
 const Header = () => {
+    const items = [
+        {
+            key: '1',
+            label: (
+                <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
+                    1st menu item
+                </a>
+            ),
+        },
+        {
+            key: '2',
+            label: (
+                <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
+                    2nd menu item
+                </a>
+            ),
+        },
+        {
+            key: '3',
+            label: (
+                <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
+                    3rd menu item
+                </a>
+            ),
+        },
+    ];
     return (
         <header  className='header'>
             <Row  align={'middle'}>
@@ -24,12 +50,21 @@ const Header = () => {
                             <li  className="nav-bar-li">
                                 <a  href="/about" className="nav-bar-anchor">About Us</a>
                             </li>
-                        </Col>
+                        </Col> <Dropdown
+                            icon={<DownOutlined />}
+                            menu={{
+                                items,
+                            }}
+                            placement="bottomLeft"
+                         
+                        >
                         <Col xs={4} sm={4} md={4}>
                             <li  className="nav-bar-li">
                                 <a  href="#" className="nav-bar-anchor">Instagram</a>
                             </li>
                         </Col>
+                        </Dropdown>
+                        
                         <Col xs={4} sm={4} md={4}>
                             <li  className="nav-bar-li">
                                 <a  href="/" className="nav-bar-anchor">Tiktok</a>

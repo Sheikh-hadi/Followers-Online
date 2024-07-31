@@ -4,7 +4,20 @@ import {
     TikTokOutlined
 } from '@ant-design/icons';
 import './SelectService.css'
-function SelectService() {
+import { useState } from "react";
+function SelectService({handleChange}) {
+
+    const [handleColor, SetHandleColor] = useState(false);
+
+    const handleInstagramColor = () => {
+        SetHandleColor(false);
+        handleChange(false);
+    };
+
+    const handletiktokColor = () => {
+        SetHandleColor(true);
+        handleChange(true);
+    }
     return (
         <Row className="Select_service">
             <Col className="Select_service_col" xs={24} sm={24} md={24}>
@@ -13,38 +26,62 @@ function SelectService() {
                 <Row gutter={[16, 16]} className="Select_service_inside_row">
                     <Col xs={12} sm={12} md={12} className="Select_service_inside_col">
                         <Button
+                            onClick={handleInstagramColor}
                             shape='round'
                             size='large'
                             icon={<InstagramOutlined
-                                style={
+                                style={handleColor ?
+                                    { color: "black" }
+                                    :
                                     { color: "white" }
                                 }
                             />}
-                            style={{
-                                background: "#f51636",
-                                color: "white",
-                                width: "100%",
-                                // padding: '10px 20px',
-                            }}
+                            style={handleColor ?
+                                {
+                                    background: "#F1F1F1",
+                                    color: "black",
+                                    width: "100%",
+                                    border: "2px solid black",
+                                }
+                                :
+                                {
+                                    background: "#f51636",
+                                    color: "white",
+                                    width: "100%",
+                                    border: "none",
+                                }
+                            }
                         >
                             Instagram
                         </Button>
                     </Col >
                     <Col xs={12} sm={12} md={12} className="Select_service_inside_col">
                         <Button
+                            onClick={handletiktokColor}
                             shape='round'
                             size='large'
                             icon={<TikTokOutlined
-                                style={
+                                style={handleColor ?
+                                    { color: "white" }
+                                    :
                                     { color: "black" }
                                 }
                             />}
-                            style={{
-                                background: "#f51636",
-                                color: "black",
-                                width: "100%",
-                                // padding: '10px 20px',
-                            }}
+                            style={handleColor ?
+                                {
+                                    background: "#f51636",
+                                    color: "white",
+                                    width: "100%",
+                                    border: "none",
+                                }
+                                :
+                                {
+                                    background: "#F1F1F1",
+                                    color: "black",
+                                    width: "100%",
+                                    border: "2px solid black",
+                                }
+                            }
                         >
                             Tiktok
                         </Button>

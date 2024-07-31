@@ -1,0 +1,16 @@
+.card_inner_style {
+    background-color: #f5f6f700;
+}
+
+.listColor {
+    color: #5e6d64;
+    font-family: "DM Sans", Sans-serif;
+    line-height: 1.4em;
+}
+
+.ListPrice {
+    color: #172b43;
+    font-family: "Fira Sans", Sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
